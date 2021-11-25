@@ -1,5 +1,4 @@
-stage 'Checkout'
+stage 'Nova8'
  node('slave') {
-  deleteDir()
   checkout scm
  }
