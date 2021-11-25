@@ -1,4 +1,10 @@
-stage 'Nova8'
- node('slave') {
-  checkout scm
- }
+pipeline {
+    agent any 
+    stages {
+        stage('Stage 1') {
+            steps {
+                echo 'Hello world!' 
+            }
+        }
+    }
+}
