@@ -1,7 +1,7 @@
 pipeline {
     agent any 
    stages {
-    stage('Security') {
+    stage('Stage 1') {
         steps {
             sh 'curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/main/deployments/scripts/install.sh | bash -s latest'
             sh 'horusec start -p="./" -e="true"'
