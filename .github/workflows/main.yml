@@ -2,7 +2,7 @@ name: Checkmarx AST Github Action
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build:
